@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>calculator</title></head>
+    <style>
+        
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9e9ef;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 290px;
+    background-color: #171717;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.display {
+    height: 150px;
+    color: white;
+    font-size: 55px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+}
+
+button {
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333333;
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.btn
+ {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.operator {
+    background-color: #ff9f0a;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="calculator">
+    <div class="display">
+        0
+    </div>
+    <div class="buttons">
+        <button class="btn">Ac</button>
+        <button class="btn">C</button>
+        <button class="btn">.</button>
+        <button class="operator">/</button>
+
+
+ 
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator">*</button>
+
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator">-</button>
+        
+
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operator">+</button>
+        
+
+        <button class="zero">0</button>
+        <button>.</button>
+        <button class="equal">=</button>
+    </div>
+</div>
+</body>
+</html>
